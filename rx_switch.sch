@@ -6358,12 +6358,12 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="SV1" library="con-lstb" deviceset="MA03-1" device="" value="RC IN"/>
-<part name="SV2" library="con-lstb" deviceset="MA03-1" device="" value="CAMERA"/>
+<part name="RC_IN" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="CAMERA" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="IC1" library="atmel" deviceset="AT90S2313" device="S"/>
-<part name="SV3" library="con-lstb" deviceset="MA03-2" device="" value="ISP"/>
+<part name="IC1" library="atmel" deviceset="AT90S2313" device="S" value=""/>
+<part name="ISP" library="con-lstb" deviceset="MA03-2" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
@@ -6379,12 +6379,12 @@ Source: www.kingbright.com</description>
 <plain>
 </plain>
 <instances>
-<instance part="SV1" gate="G$1" x="35.56" y="22.86" rot="R90"/>
-<instance part="SV2" gate="G$1" x="78.74" y="68.58" rot="R180"/>
+<instance part="RC_IN" gate="G$1" x="35.56" y="22.86" rot="R90"/>
+<instance part="CAMERA" gate="G$1" x="78.74" y="68.58" rot="R180"/>
 <instance part="GND1" gate="1" x="43.18" y="33.02"/>
 <instance part="GND2" gate="1" x="76.2" y="81.28"/>
 <instance part="IC1" gate="G$1" x="33.02" y="60.96"/>
-<instance part="SV3" gate="1" x="33.02" y="96.52" rot="R180"/>
+<instance part="ISP" gate="1" x="33.02" y="96.52" rot="R180"/>
 <instance part="GND3" gate="1" x="43.18" y="91.44"/>
 <instance part="P+1" gate="VCC" x="5.08" y="68.58"/>
 <instance part="P+2" gate="VCC" x="48.26" y="99.06" rot="R270"/>
@@ -6400,7 +6400,7 @@ Source: www.kingbright.com</description>
 <nets>
 <net name="N$3" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="3"/>
+<pinref part="RC_IN" gate="G$1" pin="3"/>
 <wire x1="33.02" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="30.48" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="17.78" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
@@ -6411,21 +6411,21 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="SV2" gate="G$1" pin="2"/>
+<pinref part="CAMERA" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PB2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="SV2" gate="G$1" pin="3"/>
+<pinref part="CAMERA" gate="G$1" pin="3"/>
 <wire x1="71.12" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="(AIN1)PB1"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="1"/>
+<pinref part="RC_IN" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="30.48" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -6437,14 +6437,14 @@ Source: www.kingbright.com</description>
 <junction x="15.24" y="55.88"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="G$1" pin="1"/>
+<pinref part="CAMERA" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="71.12" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="71.12" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="SV3" gate="1" pin="6"/>
+<pinref part="ISP" gate="1" pin="6"/>
 <wire x1="43.18" y1="93.98" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6459,7 +6459,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="SV3" gate="1" pin="5"/>
+<pinref part="ISP" gate="1" pin="5"/>
 <pinref part="IC1" gate="G$1" pin="RESET"/>
 <wire x1="25.4" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="93.98" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
@@ -6468,11 +6468,11 @@ Source: www.kingbright.com</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<pinref part="SV3" gate="1" pin="2"/>
+<pinref part="ISP" gate="1" pin="2"/>
 <wire x1="45.72" y1="99.06" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="2"/>
+<pinref part="RC_IN" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="30.48" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="33.02" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
@@ -6490,14 +6490,14 @@ Source: www.kingbright.com</description>
 <pinref part="IC1" gate="G$1" pin="(MISO)PB6"/>
 <wire x1="50.8" y1="78.74" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="78.74" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="1" pin="1"/>
+<pinref part="ISP" gate="1" pin="1"/>
 <wire x1="55.88" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="101.6" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="ISP" class="0">
 <segment>
-<pinref part="SV3" gate="1" pin="3"/>
+<pinref part="ISP" gate="1" pin="3"/>
 <wire x1="25.4" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="96.52" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="(SCK)PB7"/>
@@ -6510,7 +6510,7 @@ Source: www.kingbright.com</description>
 <pinref part="IC1" gate="G$1" pin="(MOSI)PB5"/>
 <wire x1="50.8" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="76.2" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="1" pin="4"/>
+<pinref part="ISP" gate="1" pin="4"/>
 <wire x1="53.34" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
