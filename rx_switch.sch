@@ -7065,12 +7065,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="100"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="82K"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="68k"/>
 <part name="ID" library="testpad" deviceset="TP" device="PAD1-13"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="73.66" y="76.2" size="1.778" layer="91">black</text>
+<text x="60.96" y="71.12" size="1.778" layer="91">green</text>
+<text x="60.96" y="63.5" size="1.778" layer="91">white</text>
 </plain>
 <instances>
 <instance part="RC_IN" gate="G$1" x="35.56" y="22.86" rot="R90"/>

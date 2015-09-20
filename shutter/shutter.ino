@@ -48,6 +48,8 @@ void loop()
     pinMode(FOCUS, INPUT);
     digitalWrite(LED_FOCUS, LOW);
     
+    pinMode(FOCUS, OUTPUT);
+    delay(100);
     pinMode(SHUTTER, OUTPUT);
     digitalWrite(LED_SHUTTER, HIGH);
   } else {
